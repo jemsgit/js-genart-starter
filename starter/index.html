@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="style" href="dat.gui.css" />
+    <style>
+      :root {
+        --canvas-w: 533.828px;
+        --canvas-h: 755px;
+      }
+      .with-padding {
+        padding: 20px;
+        padding-left: 20px; /* to easy center image in dev tools */
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="with-padding"
+      style="
+        position: absolute;
+        top: 40px;
+        left: 341.549px;
+        height: var(--canvas-h);
+        width: var(--canvas-w);
+        border: 1px black solid;
+      "
+    >
+      <canvas
+        id="canvas"
+        class="with-padding"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 755px;
+          width: 533.828px;
+        "
+      ></canvas>
+    </div>
+    <div class="gui"></div>
+  </body>
+  <script src="../common/libs/dat.gui.js"></script>
+  <script src="../common/libs/canvas-getsvg.js"></script>
+  <script src="../common/libs/saveSvgAsPng.js"></script>
+  <script src="../common/sizes.js"></script>
+  <script src="index.js"></script>
+</html>
